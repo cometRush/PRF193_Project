@@ -8,6 +8,8 @@ class Product {
 		int quantities, id;
 		double price;
 	public:
-		Product(std::string name, std::string t, int q, int id, double p): productName(name), productTypes(t), quantities(q), id(id), price(p){}
+    Product(std::string name, std::string t, int q, int id, double p): productName(name), productTypes(t), quantities(q), id(id), price(p){}
+    virtual displayProduct() = 0
+    virtual ~Product() {}
 };
 #endif
