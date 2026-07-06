@@ -1,6 +1,5 @@
 #ifndef SHOPMANAGER_H
 #define SHOPMANAGER_H
-#include "Product.h"
 #include <vector>
 #include <string>
 
