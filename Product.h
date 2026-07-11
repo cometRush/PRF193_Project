@@ -18,7 +18,14 @@ class Product{
 		std::string typeGet() const {return productTypes;}
 		std::string nameGet() const {return productName;}
 		
-		void quantitiesSet(int newQuantities) {quantities = newQuantities;}
+		void quantitiesSet(int newQuantities) {
+			if(newQuantities < 0)
+			{
+				std::cout << "Invalid quantity!\n";
+				return;
+			}
+			quantities = newQuantities;
+		}
 		void priceSet(double newPrice) {price = newPrice;}
 		// No need setter for product name, type, or id
 		
