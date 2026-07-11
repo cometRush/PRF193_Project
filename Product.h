@@ -26,9 +26,15 @@ class Product{
 			}
 			quantities = newQuantities;
 		}
-		void priceSet(double newPrice) {price = newPrice;}
+		void priceSet(double newPrice){
+			if(newQuantities < 0)
+			{
+				std::cout << "Invalid quantity!\n";
+				return;
+			}
+			price = newPrice;
+		}
 		// No need setter for product name, type, or id
-		
 		
 		void displayProduct() const {
 			std::cout << "Item: " << productName << " " << id << ": $" << price << " ( " << quantities << " in stock. )" << std::endl;
