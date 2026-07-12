@@ -31,7 +31,10 @@ class ShopManager{
 			std::cout << "Enter Initial Stock Quantity: ";
 			std::cin >> quantities;
 		}
-		int nextId() {uniqueId++;}
+		int nextId() {
+			uniqueId++;
+			return uniqueId;
+		}
 };
 
 #endif
