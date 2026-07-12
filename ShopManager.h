@@ -1,7 +1,7 @@
 #ifndef SHOPMANAGER_H
 #define SHOPMANAGER_H
 #include "Product.h"
-#include "Order.h"
+#include "Invoice.h"
 #include <vector>
 #include <iostream>
 #include <string>
