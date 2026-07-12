@@ -5,7 +5,6 @@
 #include <vector>
 #include <iostream>
 #include <string>
-asdfg
 
 class ShopManager{
 	private:
