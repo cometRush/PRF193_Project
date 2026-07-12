@@ -1,10 +1,10 @@
-#ifndef ORDER_H
-#define ORDER_H
+#ifndef INVOICE_H
+#define INVOICE_H
 #include <vector>
 #include <utility>
 #include "Product.h"
 
-class Order {
+class Invoice {
 	private:
 		int id;
 		std::vector<std::pair<Product, int>> cart;
