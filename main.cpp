@@ -28,7 +28,7 @@ int main() {
 			ofstream file("inventory.csv", ios::app);
 			
 			if (file.is_open()) {
-				file << shop.nextId() << "," << name << "," << price << "," << quantities << "\n";
+				file << id << "," << name << "," << price << "," << quantities << "\n";
 				file.close(); 
 				cout << "\n[Success] Product successfully saved to inventory.csv!\n";
 			} 
