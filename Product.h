@@ -27,7 +27,7 @@ class Product{
 			quantities = newQuantities;
 		}
 		void priceSet(double newPrice){
-			if(newQuantities < 0)
+			if(newPrice < 0)
 			{
 				std::cout << "Invalid quantity!\n";
 				return;
