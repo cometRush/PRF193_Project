@@ -29,7 +29,7 @@ class Product{
 		void priceSet(double newPrice){
 			if(newPrice < 0)
 			{
-				std::cout << "Invalid quantity!\n";
+				std::cout << "Invalid price range!\n";
 				return;
 			}
 			price = newPrice;
