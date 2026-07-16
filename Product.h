@@ -5,20 +5,20 @@
 
 class Product{
 	private:
-		std::string productTypes, productName;
-		int quantities, id;
+		std::string category, productName;
+		int quantity, productID;
 		double price;
 	public:
-		Product(std::string name, std::string t, int q, int id, double p): productName(name), productTypes(t), quantities(q), id(id), price(p){}
+		Product(std::string name, std::string c, int q, int id, double p): productName(name), category(c), quantity(q), productID(id), price(p){}
 		
 		// Getter & Setter for Order and ShopManager to update the item
-		int quantitiesGet() const {return quantities;}
-		int idGet() const {return id;}
+		int quantityGet() const {return quantity;}
+		int productIDGet() const {return productID;}
 		double priceGet() const {return price;}
-		std::string typeGet() const {return productTypes;}
+		std::string categoryGet() const {return category;}
 		std::string nameGet() const {return productName;}
 		
-		void quantitiesSet(int newQuantities) {
+		void quantitySet(int newQuantity) {
 			if(newQuantities < 0)
 			{
 				std::cout << "Invalid quantity!\n";
