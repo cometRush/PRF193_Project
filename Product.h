@@ -37,7 +37,7 @@ class Product{
 		// No need setter for product name, type, or id
 		
 		void displayProduct() const {
-			std::cout << "Item: " << productName << " " << id << ": $" << price << " ( " << quantities << " in stock. )" << std::endl;
+			std::cout << "Item: " << productName << " " << productID << ": $" << price << " ( " << quantity << " in stock. )" << std::endl;
 		}
 		
 };
