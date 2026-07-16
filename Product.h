@@ -19,7 +19,7 @@ class Product{
 		std::string nameGet() const {return productName;}
 		
 		void quantitySet(int newQuantity) {
-			if(newQuantities < 0)
+			if(newQuantity < 0)
 			{
 				std::cout << "Invalid quantity!\n";
 				return;
