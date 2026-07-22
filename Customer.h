@@ -1,6 +1,5 @@
 #ifndef CUSTOMER_H
 #define CUSTOMER_H
-
 #include <string>
 #include <iostream>
 
@@ -12,9 +11,7 @@ class Customer
         std::string phoneNumber;
         std::string address;
         int rewardPoints;
-
     public:
-
         Customer(int id,
                  std::string name,
                  std::string phone,
@@ -27,9 +24,6 @@ class Customer
           rewardPoints(points)
         {
         }
-
-        // Getter
-
         int customerIDGet() const
         {
             return customerID;
@@ -54,9 +48,6 @@ class Customer
         {
             return rewardPoints;
         }
-
-        // Setter
-
         void phoneNumberSet(std::string newPhone)
         {
             phoneNumber = newPhone;
@@ -77,9 +68,6 @@ class Customer
 
             rewardPoints = newPoints;
         }
-
-        // Display
-
         void displayCustomer() const
         {
             std::cout
@@ -90,7 +78,6 @@ class Customer
             << "\nReward Points: " << rewardPoints
             << std::endl;
         }
-
 };
 
 #endif
