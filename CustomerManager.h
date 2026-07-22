@@ -1,6 +1,5 @@
 #ifndef CUSTOMERMANAGER_H
 #define CUSTOMERMANAGER_H
-
 #include "Customer.h"
 #include <vector>
 #include <iostream>
