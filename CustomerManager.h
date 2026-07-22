@@ -20,9 +20,6 @@ class CustomerManager
         {
             customerList = list;
         }
-
-        // Add Customer
-
         void addCustomer(int id,
                          std::string name,
                          std::string phone,
@@ -35,9 +32,6 @@ class CustomerManager
 
             std::cout << "Customer added successfully!\n";
         }
-
-        // Display
-
         void displayAllCustomers() const
         {
             if(customerList.empty())
@@ -52,9 +46,6 @@ class CustomerManager
                 std::cout << std::endl;
             }
         }
-
-        // Search
-
         void searchCustomer(int id) const
         {
             for(int i = 0; i < customerList.size(); i++)
@@ -68,9 +59,6 @@ class CustomerManager
 
             std::cout << "Customer not found.\n";
         }
-
-        // Delete
-
         void deleteCustomer(int id)
         {
             for(int i = 0; i < customerList.size(); i++)
@@ -87,9 +75,6 @@ class CustomerManager
 
             std::cout << "Customer not found.\n";
         }
-
-        // Edit
-
         void editCustomer(int id,
                           std::string phone,
                           std::string address)
@@ -109,7 +94,5 @@ class CustomerManager
 
             std::cout << "Customer not found.\n";
         }
-
 };
-
 #endif
