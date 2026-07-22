@@ -1,6 +1,8 @@
 #include "ShopManager.h"
 #include "Product.h"
 #include "Invoice.h"
+#include "Customer.h"
+#include "CustomerManager.h"
 #include <string>
 #include <fstream>
 using namespace std;
